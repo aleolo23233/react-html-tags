@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "types": ["bun-types", "react"],
+    "noEmit": true,
+    "rootDir": ".",
+    "strict": false,
+    "skipLibCheck": true
+  },
+  "include": ["src/**/__tests__/**/*", "test-setup.ts", "src/globals.d.ts"],
+  "exclude": ["node_modules", "dist"]
+}

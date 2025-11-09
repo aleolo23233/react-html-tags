@@ -181,14 +181,3 @@ For detailed instructions, see [CONTRIBUTING.md](./CONTRIBUTING.md).
 ## License
 
 MIT
-
-## Roadmap
-
-✅ **v0.1.0** - All standard HTML5 elements implemented (110+ components)
-
-Future versions:
-- 📦 Publish to npm registry
-- 📚 Enhanced documentation site
-- 🧪 Comprehensive test suite
-- 🎨 Optional styled-components integration
-- 🔧 Additional utility types and helpers

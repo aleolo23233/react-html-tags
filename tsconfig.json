@@ -17,7 +17,6 @@
     "declaration": true,
     "declarationDir": "./dist",
     "outDir": "./dist",
-    "rootDir": "./src",
     "emitDeclarationOnly": false,
 
     // Best practices
@@ -33,5 +32,5 @@
     "noPropertyAccessFromIndexSignature": false
   },
   "include": ["src/**/*"],
-  "exclude": ["node_modules", "dist", "docs"]
+  "exclude": ["node_modules", "dist", "docs", "**/__tests__", "**/*.test.tsx", "test-setup.ts"]
 }
